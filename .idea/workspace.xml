@@ -36,7 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696131008231</updated>
       <workItem from="1696131010310" duration="1794000" />
-      <workItem from="1696139682243" duration="2924000" />
+      <workItem from="1696139682243" duration="4155000" />
     </task>
     <servers />
   </component>
@@ -48,9 +48,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="466" y="142" width="424" height="482" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1696133604121" />
-    <state x="481" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1696140844666">
+    <state x="481" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1696143087834">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="481" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1696140844666" />
+    <state x="481" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1696143087834" />
   </component>
 </project>
