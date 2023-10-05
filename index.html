@@ -475,7 +475,36 @@
 
 
     let customers=[];
+    function saveCustomer(){
 
+        let cus_ID = $("#txtid").val();
+        let cus_Name = $("#txtName").val();
+        let cus_Address = $("#txtaddress").val();
+        let cus_Salary = $("#txtsalary").val();
+
+        var customer = {
+            id: cus_ID,
+            name: cus_Name,
+            address: cus_Address,
+            salary: cus_Salary
+        }
+        //add customer to object to the array
+        customers.push(customer);
+        console.log(customers);
+    }
+
+    function getAllcustomer(){
+
+        for (let i = 0; i < customers.length; i++) {
+            let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+            $("#tblCustomer").append(row);
+        }
+    }
     // btn1.addEventListener("click",function (){
     //     let customer={
     //         id: cusid.value,
@@ -504,32 +533,12 @@
     //
     // });
     $("#btn1").click(function () {
-
-        let cus_ID = $("#txtid").val();
-        let cus_Name = $("#txtName").val();
-        let cus_Address = $("#txtaddress").val();
-        let cus_Salary = $("#txtsalary").val();
-
-        var customer = {
-            id: cus_ID,
-            name: cus_Name,
-            address: cus_Address,
-            salary: cus_Salary
-        }
-        //add customer to object to the array
-        customers.push(customer);
-        console.log(customers);
+        saveCustomer()
     });
+
     $("#btnGetAll").click(function () {
-        for (let i = 0; i < customers.length; i++) {
-            let row = `<tr>
-                            <td>${customers[i].id}</td>
-                            <td>${customers[i].name}</td>
-                            <td>${customers[i].address}</td>
-                            <td>${customers[i].salary}</td>
-                        </tr>`;
-            $("#tblCustomer").append(row);
-        }
+        $("#tblCustomer").empty();
+        getAllcustomer()
 
     });
 
